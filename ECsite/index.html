@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<title>ECsite 2020am</title>
+</head>
+
+<body>
+  <div id="all">
+    <script>
+	jQuery(function () {
+
+	jQuery('.mobile_drawer_button').click(function () {
+		jQuery(this).toggleClass('active');
+		jQuery('.mobile_drawer_bg').fadeToggle();
+		jQuery('nav').toggleClass('open');
+	})
+	jQuery('.mobile_drawer_bg').click(function () {
+		jQuery(this).fadeOut();
+		jQuery('.mobile_drawer_button').removeClass('active');
+		jQuery('nav').removeClass('open');
+	});
+})
+	</script>
+	<div class="mobile_drawer_menu left">
+		<div class="mobile_drawer_bg"></div>
+		<button type="button" class="mobile_drawer_button">
+			<span class="mobile_drawer_bar mobile_drawer_bar1"></span>
+			<span class="mobile_drawer_bar mobile_drawer_bar2"></span>
+			<span class="mobile_drawer_bar mobile_drawer_bar3"></span>
+			<span class="mobile_drawer_menu_text mobile_drawer_text">MENU</span>
+			<span class="mobile_drawer_close mobile_drawer_text">CLOSE</span>
+		</button>
+		<nav class="mobile_drawer_nav_wrapper">
+			<ul class="mobile_drawer_nav">
+<li><a href="#"><i class="fa fa-angle-double-right"></i>カテゴリーから探す</a></li>
+<li><a href="#"><i class="fa fa-angle-double-right"></i>ブランドから探す</a></li>
+<li><a href="#"><i class="fa fa-angle-double-right"></i>詳細検索</a></li>
+<li><a href="#"><i class="fa fa-angle-double-right"></i>新規会員登録</a></li>
+<li><a href="#"><i class="fa fa-angle-double-right"></i>ログイン</a></li>
+<li><a href="#"><i class="fa fa-angle-double-right"></i>お問い合わせ</a></li>
+			</ul>
+		</nav>
+	</div>
+    <header><img class="logo" src="images/ELdrago_1.svg">
+      <div id="header_right">
+        <form action="#" id="search-box">
+          <input type="text" name="stxt" class="search-text" title="main keyword" placeholder="Searching" value=""></input>
+          <botton type="submit" value="Поиск" name="search-btn" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></botton>
+          <a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-camera fa-2x" aria-hidden="true"></i></a>
+        </form>
+
+<div id="global_menu">
+  <nav>
+    <ul>
+      <li><a href="products.html">Top page</a></li>
+      <li><a href="index.html">Best off</a></li>
+      <li><a href="#">Sale</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#"> About license </a></li>
+      <li><a href="#"> Call center </a></li>
+    </ul>
+  </nav>
+</div><!--global_menu досюда-->
+<ul class="Place">
+
+  <li><a href="products.html">Top page <i class="fa fa-caret-right" aria-hidden="true"></i></li></a>
+  <li><a href="#"> Catalog<i class="fa fa-caret-right" aria-hidden="true"></i></li></a>
+  <li><a href="index.html"> Best off</li></a>
+ 
+</ul>
+</div><!--header_right досюда-->
+</header>
+    <div id="side_column">
+      <ul class="catalog">Catalog</ul>
+      <ul class="menu_name">
+       <li><a href="#"><img class="left_menu" src="images/submachine-gun.png" alt="Левое меню">Weapons</a><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></li>
+       <li><a href="#"><img class="left_menu" src="images/bullets.png" alt="Левое меню">Ammo</a><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></li>
+       <li><a href="#"><img class="left_menu" src="images/police-vest.png" alt="Левое меню">Armor</a><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></li>
+       <li><a href="#"><img class="left_menu" src="images/swiss-knife.png" alt="Левое меню">Steel arms</a><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></li>
+       <li><a href="#"><img class="left_menu" src="images/fish.png" alt="Левое меню">Fishing</a><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></li>
+       <li><a href="#"><img class="left_menu" src="images/hanger.png" alt="Левое меню">Suit</a><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></li>
+       <li><a href="#"><img class="left_menu" src="images/license-identification-card.png" alt="Левое меню">License</a><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></li>
+       <li><a href="#"><img class="left_menu" src="images/education-school-book.png" alt="Левое меню">Books</a><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+    <div class="main">
+  <ul class="itemlist">
+    <li>
+      <img class="weapon_img" src="images/weapon1.png" alt="Shotgun">
+      <img class="new" src="images/new.png">
+      <div class="obi">1,000￥ クーポン</div>
+      <span class="item_name">Hunting gun</span>
+      <div class="price">71,400
+        <span class="yen">円
+        </span>
+        <span class="taxin">(税込)
+        </span>
+      </div>
+      </li>
+        <li>
+          <img class="weapon_img" src="images/weapon2.png" alt="AP">
+          <img class="new" src="images/new.png">
+          <div class="obi">1,000￥ クーポン</div>
+          <span class="item_name">Authomatic pistol</span>
+          <div class="price">42,000
+            <span class="yen">円
+            </span>
+            <span class="taxin">(税込)
+            </span>
+          </div>
+        </li>
+        <li>
+
+          <img class="weapon_img" src="images/weapon3.png" alt="Armor">
+          <img class="new" src="images/new.png">
+          <div class="obi">1,000￥ クーポン</div>
+          <span class="item_name">Armor</span>
+          <div class="price">25,000
+            <span class="yen">円
+            </span>
+            <span class="taxin">(税込)
+            </span>
+            </div>
+          </li>
+            <li>
+              <img class="weapon_img" src="images/weapon4.png" alt="Knife">
+              <img class="new" src="images/new.png">
+              <div class="obi">1,000￥ クーポン</div>
+              <span class="item_name">Knife</span>
+              <div class="price">4,000
+                <span class="yen">円
+                </span>
+                <span class="taxin">(税込)
+                </span>
+              </div>
+
+
+                  </li>
+                  <li>
+
+                    <img class="weapon_img" src="images/weapon5.png" alt="AK">
+                    <img class="new" src="images/new.png">
+                    <div class="obi">10,000￥ クーポン</div>
+                    <span class="item_name">AK modificated</span>
+                    <div class="price">321,500
+                      <span class="yen">円
+                      </span>
+                      <span class="taxin">(税込)
+                      </span>
+                      </div>
+                    </li>
+                      <li>
+                        <img class="weapon_img" src="images/weapon6.png" alt="Crossbow">
+                        <img class="new" src="images/new.png">
+                        <div class="obi">1,000￥ クーポン</div>
+                        <span class="item_name">Crossbow</span>
+                        <div class="price">15,000
+                          <span class="yen">円
+                          </span>
+                          <span class="taxin">(税込)
+                          </span>
+                        </div>
+
+
+                            </li>
+                            <li>
+
+                              <img class="weapon_img" src="images/weapon7.png" alt="Ammo">
+                              <img class="new" src="images/new.png">
+                              <div class="obi">1,000￥ クーポン</div>
+                              <span class="item_name">7.62ammo</span>
+                              <div class="price">10X60
+                                <span class="yen">円
+                                </span>
+                                <span class="taxin">(税込)
+                                </span>
+                              </div>
+                              </li>
+                                <li>
+                                  <img class="weapon_img" src="images/weapon8.png" alt="Suit">
+                                  <img class="new" src="images/new.png">
+                                  <div class="obi">1,000￥ クーポン</div>
+                                  <span class="item_name">Suit</span>
+                                  <div class="price">12,000
+                                    <span class="yen">円
+                                    </span>
+                                    <span class="taxin">(税込)
+                                    </span>
+                                  </div>
+                            </li>
+                            <li>
+                              <img class="weapon_img" src="images/weapon9.png" alt="Bag">
+                              <img class="new" src="images/new.png">
+                              <div class="obi">1,000￥ クーポン</div>
+                              <span class="item_name">Survival bag</span>
+                              <div class="price">8,000
+                                <span class="yen">円
+                                </span>
+                                <span class="taxin">(税込)
+                                </span>
+                              </div>
+                              </li>
+                              <li>
+                                <img class="weapon_img" src="images/weapon10.png" alt="Sight">
+                                <img class="new" src="images/new.png">
+                                <div class="obi">5,000￥ クーポン</div>
+                                <span class="item_name">Sight for pistol</span>
+                                <div class="price">64,500
+                                  <span class="yen">円
+                                  </span>
+                                  <span class="taxin">(税込)
+                                  </span>
+                                </div>
+                                </li>
+                                <li>
+                                  <img class="weapon_img" src="images/weapon11.png" alt="Gloves">
+                                  <img class="new" src="images/new.png">
+                                  <div class="obi">1,000￥ クーポン</div>
+                                  <span class="item_name">Gloves</span>
+                                  <div class="price">4,200
+                                    <span class="yen">円
+                                    </span>
+                                    <span class="taxin">(税込)
+                                    </span>
+                                  </div>
+                                  </li>
+                                  <li>
+                                    <img class="weapon_img" src="images/weapon12.png" alt="Bipod">
+                                    <img class="new" src="images/new.png">
+                                    <div class="obi">1,000￥ クーポン</div>
+                                    <span class="item_name">Bipod for rifle</span>
+                                    <div class="price">15,000
+                                      <span class="yen">円
+                                      </span>
+                                      <span class="taxin">(税込)
+                                      </span>
+                                    </div>
+                                    </li>
+                                    <li>
+                                      <img class="weapon_img" src="images/weapon13.png" alt="Boots">
+                                      <img class="new" src="images/new.png">
+                                      <div class="obi">1,000￥ クーポン</div>
+                                      <span class="item_name">Boots</span>
+                                      <div class="price">16,000
+                                        <span class="yen">円
+                                        </span>
+                                        <span class="taxin">(税込)
+                                        </span>
+                                      </div>
+                                      </li>
+                                      <li>
+                                        <img class="weapon_img" src="images/weapon14.png" alt="Mosin">
+                                        <img class="new" src="images/new.png">
+                                        <div class="obi">10,000￥ クーポン</div>
+                                        <span class="item_name">Mosin rifle</span>
+                                        <div class="price">280,000
+                                          <span class="yen">円
+                                          </span>
+                                          <span class="taxin">(税込)
+                                          </span>
+                                        </div>
+                                        </li>
+                                        <li>
+                                          <img class="weapon_img" src="images/weapon15.png" alt="Machine_gun">
+                                          <img class="new" src="images/new.png">
+                                          <div class="obi">20,000￥ クーポン</div>
+                                          <span class="item_name">Machine gun</span>
+                                          <div class="price">545,000
+                                            <span class="yen">円
+                                            </span>
+                                            <span class="taxin">(税込)
+                                            </span>
+                                          </div>
+                                          </li>
+                                          <li>
+                                            <img class="weapon_img" src="images/weapon16.png" alt="Udka">
+                                            <img class="new" src="images/new.png">
+                                            <div class="obi">1,000￥ クーポン</div>
+                                            <span class="item_name">Rods</span>
+                                            <div class="price">4,000
+                                              <span class="yen">円
+                                              </span>
+                                              <span class="taxin">(税込)
+                                              </span>
+                                            </div>
+                                            </li>
+
+
+
+  </ul><!-- itemlist досюда -->
+  <div class="pager">
+    <ul class="pagination">
+      <li class="pre"><a href="#"><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span></a></li>
+      <li><a href="#" class="active"><span>1</span></a></li>
+      <li><a href="#"><span>2</span></a></li>
+      <li><a href="#"><span>3</span></a></li>
+      <li><a href="#"><span>4</span></a></li>
+      <li><a href="#"><span>5</span></a></li>
+      <li class="next"><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span></a></li>
+    </ul>
+  </div><!-- pager досюда -->
+</div><!-- main досюда -->
+<footer>
+  <ul class="footer_list">
+    <h2><li><p style="color:rgb(255, 255, 255)">For customers</li></p></h2>
+    <li><a href="#">Rules of using guns</a></li>
+    <li><a href="#">Payments</a></li>
+    <li><a href="#">Delivery</a></li>
+    <li><a href="#">Exchange and return</a></li>
+    <li><a href="#">Call center</a></li>
+  </ul>
+  <ul class="footer_list">
+    <h2><li><p style="color:rgb(255, 255, 255)">About company</li></p></h2>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Service center</a></li>
+    <li><a href="#">Dealers</a></li>
+    <li><a href="#">Privacy and policy</a></li>
+    <li><a href="#">Shops on the map</a></li>
+  </ul>
+  <ul class="footer_list">
+    <h2><li><p style="color:rgb(255, 255, 255)">Others</li></p></h2>
+    <li><a href="#">Questions and answers</a></li>
+    <li><a href="#">Guarantees</a></li>
+    <li><a href="#">Suggestions to us</a></li>
+    <li><a href="#">Contracting</a></li>
+    <li><a href="#">All Laws of Carrying Weapons</a></li>
+  </ul>
+</footer>
+</div><!-- all досюда -->
+</body>
+</html>
