@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    margin: 0 auto;
+    width: min(100%,1200px);
+    font-family: Arial, sans-serif;
+    background-color: #ebcfbf;
+    line-height: 1.8;
+    }
+
+/* Product buttons styling - Updated to match cart.css */
+.product-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.product-link {
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    background-color: rgb(175, 86, 47);
+    color: #d3c29f;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.product-link:hover {
+    background-color: #d3c29f;
+    color: rgb(175, 86, 47);
+    border: 2px solid rgb(175, 86, 47);
+    transform: translateY(-2px);
+}
+
+.add-to-cart-btn {
+    display: inline-block;
+    background-color: rgb(175, 86, 47);
+    color: #d3c29f;
+    border: 2px solid transparent;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 120px;
+    height: 35px;
+    line-height: 19px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d3c29f;
+    color: rgb(175, 86, 47);
+    border: 2px solid rgb(175, 86, 47);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(175, 86, 47, 0.3);
+}
+  
+    .mobile_drawer_menu{
+      display: none;
+    }
+  
+  #navbar {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3c29f;
+  }
+  
+  #navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 85px 0 0;
+    text-decoration: none;
+    color: rgb(175, 86, 47);
+    font-family: "M PLUS Rounded 1c";
+    font-size: 1.3em; 
+    font-weight: bold;
+  }
+  
+  .logo{
+    width: 200px; 
+    height: 200px;
+    display: inline-block; 
+    text-align: center; 
+    margin: 0 auto; 
+  }
+  
+  .logo img {
+    height: 70px;
+    margin: 0 10px;
+  }
+  
+  .social-logo {
+    padding-top: 85px;
+    width: 40px; 
+    height: 30px; 
+    margin-left: 10px;
+  }
+  
+  .social-logo img{
+    height: 30px;
+  }
+  /* Навигационное меню досюда */
+  
+  #header-image {
+    position: relative;
+  }
+  
+  #header-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #header-logo {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    width: 50%;
+  }
+    
+    /* Главное фото с лого досюда */
+    
+    
+    #left-menu {
+    width: 250px;
+    height: fit-content;
+    background-color: #d3c29f;
+    color: rgb(175, 86, 47);
+    margin-top: 0;
+    }
+    
+    #left-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -10px;
+    }
+    
+    #left-menu li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(175,86,47);
+    font-weight: bold;
+    }
+    
+    #left-menu a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    /* Левое меню досюда */
+    
+    .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    width: 1000px;
+    }
+    
+    .right-content {
+    height: 100%;
+    float: right;
+    text-align: center;
+    line-height: 2.5;
+    }
+    
+    h2{
+    margin-bottom: 32px;
+    color: rgb(175,86,47);
+    }
+    
+  
+  
+    /* Текст досюда */
+  
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+      width: auto;
+      min-height: 300px;
+      margin: 20px 0;
+    }
+    
+    .cell {
+      width: 30%;
+      text-align: center;
+      padding-left: 20px;
+      background-color: #d3c29f;
+      border: solid #d3c29f;
+    }
+    .cell:first-of-type{
+        border-top-left-radius: 20%;
+    }
+    .cell:last-of-type{
+        border-top-right-radius: 20%;
+    }
+    .cell:not(:nth-of-type(2n+2)){
+      border-right: 1px solid rgb(175,86,47);
+    }
+    .cell:nth-child(2){
+        border-bottom: 1px solid rgb(175,86,47);
+      }
+      .cell:not(:nth-last-of-type(-n+1)){
+        border-bottom: 1px solid rgb(175,86,47);
+      }
+    .product-container img {
+      width: 20%;
+      height: auto;
+      margin-top: 48px;
+      margin-right: 150px;
+      flex-direction: row;
+      border: solid #ffffff;
+    }
+    .product-container p{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: -113px 0 0 125px;
+      font-size: 15px;
+      font-weight: bold;
+      font-family: "Sawarabi Mincho";
+      color: #606060;
+    }
+    button{
+        width: 70px;
+        height: 30px;
+        margin: 55px 186px 0 0;
+        background-color: rgb(175,86,47);
+        color: #ffffff;
+        border: 2px solid rgb(175,86,47);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    button a{
+      text-decoration: none;
+      color: #ffffff;
+    }
+    
+   /* Товары досюда */
+  
+   .map {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 50px 0 0 340px;
+      width: 80%;
+      background-color: #d3c29f;
+      border: 4px solid #d3c29f;
+      border-radius: 30px;
+      }
+      
+      .map p {
+      text-align: center;
+      margin: 50px 0 20px 0;
+      color: rgb(175,86,47);;
+      font-size: 1.3em;
+      font-family: "M PLUS Rounded 1c";
+      font-weight: bold;
+      }
+      
+      iframe {
+      width: 80%;
+      height: 350px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      border: 4px solid #d3c29f;
+      border-radius: 30px #d3c29f;
+      }
+      
+  /* Карта досюда */
+    
+    footer {
+    height: 100%;
+    background-color: #d3c29f;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    }
+    .coopyright{
+      font-size: small;
+    }
+    footer p{
+      margin-top: 20px;
+    }
+    footer p a{
+      text-decoration: none;
+      color: #ffffff;
+      padding: 0 20px 0 20px;
+    }
+    
+    @media only screen and (max-width: 767px) {
+       #left-menu {
+         margin-top: 0;
+       }
+     
+       .container {
+         margin-top: 0;
+         width: 95%;
+       }
+     
+       .product-container {
+         width: 100%;
+         height: auto;
+         margin: 20px 0;
+       }
+     
+       .cell {
+         width: 100%;
+       }
+     
+       .product-container img {
+         width: 40%;
+         margin: 20px 0;
+       }
+     
+       .product-container p{
+         margin: 10px 0;
+       }
+     
+       button {
+         width: 100px;
+         margin: 20px 0;
+       }
+       }

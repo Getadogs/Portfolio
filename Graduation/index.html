@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top page</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/cart.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link type="image/x-icon" href="img/Al.ico" rel="shortcut icon">
+
+</head>
+<body>
+  <script>
+	jQuery(function () {
+  jQuery('.mobile_drawer_button').click(function () {
+  jQuery(this).toggleClass('active');
+  jQuery('.mobile_drawer_bg').fadeToggle();
+  jQuery('nav').toggleClass('open');
+})
+  jQuery('.mobile_drawer_bg').click(function () {
+  jQuery(this).fadeOut();
+  jQuery('.mobile_drawer_button').removeClass('active');
+  jQuery('nav').removeClass('open');
+});
+})
+  </script>
+  <div class="mobile_drawer_menu left">
+		<div class="mobile_drawer_bg"></div>
+		<button type="button" class="mobile_drawer_button">
+			<span class="mobile_drawer_bar mobile_drawer_bar1"></span>
+			<span class="mobile_drawer_bar mobile_drawer_bar2"></span>
+			<span class="mobile_drawer_bar mobile_drawer_bar3"></span>
+			<span class="mobile_drawer_menu_text mobile_drawer_text">MENU</span>
+			<span class="mobile_drawer_close mobile_drawer_text">CLOSE</span>
+		</button>
+		<nav class="mobile_drawer_nav_wrapper">
+			<ul class="mobile_drawer_nav">
+        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+        <li><a href="shoukai.html"><i class="fa fa-angle-double-right"></i>紹介</a></li>
+        <li><a href="product.html"><i class="fa fa-angle-double-right"></i>商品</a></li>
+        <li><a href="rules.html"><i class="fa fa-angle-double-right"></i>使用上のルール</a></li>
+        <li><a href="category.html"><i class="fa fa-angle-double-right"></i>カテゴリー</a></li>
+        <li><a href="hookah.html"><i class="fa fa-angle-double-right"></i>シーシャ</a></li>
+        <li><a href="product.html"><i class="fa fa-angle-double-right"></i>フレーバー</a></li>
+        <li><a href="charcoal.html"><i class="fa fa-angle-double-right"></i>炭 チャコール</a></li>
+        <li><a href="accessories.html"><i class="fa fa-angle-double-right"></i>アクセサリー</a></li>
+			</ul>
+		</nav>
+	</div>
+    <header>
+        <nav id="navbar">
+            <ul>
+              <li class="top-words"><a href="index.html">About</a></li>
+              <li class="top-words"><a href="shoukai.html">紹介</a></li>
+              <li class="top-words"><a href="category.html">商品</a></li>
+              <li class="logo"><a href="product.html"><img src="img/Logo(changed).png" alt="Almalla logo"></a></li>
+              <li class="top-words"><a href="rules.html">使用上のルール</a></li>
+              <li class="social-logo"><a href="#"><img src="img/Instagram.png" alt="sns"></a></li>
+              <li class="social-logo"><a href="#"><img src="img/Facebook.png" alt="sns"></a></li>
+              <li class="social-logo"><a href="#"><img src="img/Twitter.png" alt="sns"></a></li>
+            </ul>
+          </nav>
+          <div id="header-image">
+            <img src="img/main.jpg" alt="header-image">
+            <div id="header-logo">
+                <img src="img/Logo(changed).png" alt="logo">
+            </div>
+        </div>
+    </header>
+    <main>
+    <nav id="left-menu">
+      <ul>
+        <li><a href="category.html">カテゴリー</a></li>
+        <li><a href="hookah.html">シーシャ</a></li>
+        <li><a href="product.html">フレーバー</a></li>
+        <li><a href="charcoal.html">炭 チャコール</a></li>
+        <li><a href="accessories.html">アクセサリー</a></li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <div class="left-space"></div>
+      <div class="right-content">
+        <h2>Almalla Hookahについて</h2>
+        <p>本サイトは販売目的ではなく、あくまでも様々な水たばこ関連商品の紹介を目的としたものです。このウェブサイトでは、さまざまなフレーバーを閲覧して、お好みのフレーバーを見つけることができます。
+          フレーバーなどの詳細は、<strong><a href=shoukai.html>「紹介」</a></strong>ページへ行ってください。</p>
+        <p>紹介ページでは、商品を選ぶと、その説明と購入できるショップが別ページで表示されいます。しかし、この製品を読んで購入する前に、
+          日本のたばこに関する<strong><a href="rules.html">「使用上のルール」</a></strong>を読んでおくことをお勧めです。
+          すべての規約をお読みになった後は、以下のリンクをクリックして紹介ページが表示されます。</p>
+          <button class="btn">
+            <span><a href="category.html">商品ページを見る</a></span>
+            <a href="product.html"><img src="img/play_30px.png" class="play-logo" alt="Logo"></a>
+          </button>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <p><a href="index.html">About</a>
+      <a href="shoukai.html">紹介ページ</a> 
+      <a href="product.html">商品</a> 
+      <a href="rules.html">使用上のルール</a></p>
+    <p class="coopyright">©Coopyright シーシャ・水たばこ紹介ウェブサイト Almalla</p>
+  </footer>
+<script src="js/cart.js"></script>
+</body>
+</html>

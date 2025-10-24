@@ -1,0 +1,134 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: min(100%,1200px);
+  font-family: Arial, sans-serif;
+  background-color: #ebcfbf;
+  line-height: 1.8;
+  }
+
+
+#navbar {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3c29f;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 85px 0 0;
+  text-decoration: none;
+  color: rgb(175, 86, 47);
+  font-family: "M PLUS Rounded 1c";
+  font-size: 1.3em; 
+  font-weight: bold;
+}
+
+.logo{
+  width: 200px; 
+  height: 200px;
+  display: inline-block; 
+  text-align: center; 
+  margin: 0 auto; 
+}
+
+.logo img {
+  height: 70px;
+  margin: 0 10px;
+}
+
+.social-logo {
+  padding-top: 85px;
+  width: 40px; 
+  height: 30px; 
+  margin-left: 10px;
+}
+
+.social-logo img{
+  height: 30px;
+}  
+  /* Навигационное меню досюда */
+  
+  
+  .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  }
+  
+
+  .middle-content {
+  width: 70%;
+  height: 100%;
+  float: right;
+  text-align: center;
+  line-height: 2.5;
+  }
+  
+  h2{
+  margin-bottom: 32px;
+  color: rgb(175,86,47);
+  }
+  
+  .middle-content p{
+  margin-bottom: 64px;
+  color: #606060;
+  font-family: "Sawarabi Mincho";
+  font-size: 18px;
+  }
+  
+  footer {
+    height: 100%;
+    background-color: #d3c29f;
+    color: #ffffff;
+    margin-top: 200px;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    }
+    .coopyright{
+      font-size: small;
+    }
+    footer p{
+      margin-top: 20px;
+    }
+    
+    footer p a{
+      text-decoration: none;
+      color: #ffffff;
+      padding: 0 10px 0 10px;
+    }
+
+    @media (max-width: 996px){
+
+
+
+    }
+
+    @media (max-width: 480px){
+
+      footer p{
+        padding: 0;
+      }
+      footer p a{
+        padding: 0 10px 0 10px;
+      }
+    }
+  

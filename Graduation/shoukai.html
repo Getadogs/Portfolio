@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shoukai</title>
+  <link href="css/shoukai.css" rel="stylesheet" type="text/css">
+  <link href="css/cart.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <link type="image/x-icon" href="img/Al.ico" rel="shortcut icon">
+</head>
+<body>
+  <script>
+    jQuery(function () {
+    jQuery('.mobile_drawer_button').click(function () {
+    jQuery(this).toggleClass('active');
+    jQuery('.mobile_drawer_bg').fadeToggle();
+    jQuery('nav').toggleClass('open');
+  })
+    jQuery('.mobile_drawer_bg').click(function () {
+    jQuery(this).fadeOut();
+    jQuery('.mobile_drawer_button').removeClass('active');
+    jQuery('nav').removeClass('open');
+  });
+  })
+    </script>
+    <div class="mobile_drawer_menu left">
+      <div class="mobile_drawer_bg"></div>
+      <button type="button" class="mobile_drawer_button">
+        <span class="mobile_drawer_bar mobile_drawer_bar1"></span>
+        <span class="mobile_drawer_bar mobile_drawer_bar2"></span>
+        <span class="mobile_drawer_bar mobile_drawer_bar3"></span>
+        <span class="mobile_drawer_menu_text mobile_drawer_text">MENU</span>
+        <span class="mobile_drawer_close mobile_drawer_text">CLOSE</span>
+      </button>
+      <nav class="mobile_drawer_nav_wrapper">
+        <ul class="mobile_drawer_nav">
+          <li><a href="index.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+          <li><a href="shoukai.html"><i class="fa fa-angle-double-right"></i>紹介</a></li>
+          <li><a href="product.html"><i class="fa fa-angle-double-right"></i>商品</a></li>
+          <li><a href="rules.html"><i class="fa fa-angle-double-right"></i>使用上のルール</a></li>
+          <li><a href="category.html"><i class="fa fa-angle-double-right"></i>カテゴリー</a></li>
+          <li><a href="hookah.html"><i class="fa fa-angle-double-right"></i>シーシャ</a></li>
+          <li><a href="product.html"><i class="fa fa-angle-double-right"></i>フレーバー</a></li>
+          <li><a href="charcoal.html"><i class="fa fa-angle-double-right"></i>炭 チャコール</a></li>
+          <li><a href="accessories.html"><i class="fa fa-angle-double-right"></i>アクセサリー</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <nav id="navbar">
+          <ul>
+            <li class="top-words"><a href="index.html">About</a></li>
+            <li class="top-words"><a href="shoukai.html">紹介</a></li>
+            <li class="top-words"><a href="category.html">商品</a></li>
+            <li class="logo"><a href="product.html"><img src="img/Logo(changed).png" alt="Almalla logo"></a></li>
+            <li class="top-words"><a href="rules.html">使用上のルール</a></li>
+            <li class="social-logo"><a href="#"><img src="img/Instagram.png" alt="sns"></a></li>
+            <li class="social-logo"><a href="#"><img src="img/Facebook.png" alt="sns"></a></li>
+            <li class="social-logo"><a href="#"><img src="img/Twitter.png" alt="sns"></a></li>
+          </ul>
+        </nav>
+        <div id="header-image">
+          <img src="img/main.jpg" alt="header-image">
+          <div id="header-logo">
+              <img src="img/Logo(changed).png" alt="logo">
+          </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="content_1">
+          <h2>水たばことは？</h2>
+          <p class="content-text">中近東で発明され、その後インド北部や中国、東南アジアの一部に伝わ。
+            火皿で燃えたタバコの煙を水にくぐらせ、ろ過された煙を喫煙する。煙が水を通ることで冷やされ、やわらかい味わいになる。後述のように各地で呼び名は異なるものの、専用の香り（フレーバー）が付けられたタバコの葉に炭を載せるなどして熱し、出た煙をガラス瓶の中の水を通して吸うという基本的な構造は同じである。大きさは小さい物で高さ30cmからあり、一般的な物は60–80cmほど、大きい物では1mを超すものも多い。
+            また、フレーバーには果物からスパイス、花、コーヒー、ガムなど多くの種類がある。</p>
+        </section>
+        <section class="content_2">
+          <h2>フレーバーは？</h2>
+          <p class="content-text">水たばこは、昔からタバコを摂取するための代表的な方法の1つです。今日、人々は専門店（シーシャハウス）やカフェ、ラウンジだけでなく、家庭でもフッカを吸い始めています。なぜなら、家庭で水たばこを作るために必要なすべての部品は、専門店の棚に並んでいるからです。
+
+            多くの喫煙者がニコチンを飽和させるためだけに利用するタバコと違い、水タバコの機能は、タバコの香りの楽しさとリラックスする喜びという、まったく異なるものです。
+            水たばこ喫煙の大きな要素のひとつは、その味です。
+            
+            水たばこのフレーバーは何十種類もあり、シーシャとタバコを愛する人なら誰でも自分のニーズと欲求に合ったものを見つけることができます。</p>
+        </section>
+      </article>
+      <aside>
+        <ul class="navigation-menu">
+          <li><h2>人気のあるフレーバーメーカーを一部紹介</h2></li>
+          <li><a href="#"><img src="img/AL Fakher.jpg" alt="">AL FAKHER</a></li>
+          <li><a href="#"><img src="img/Chabacco.png" alt="">CHABACCO</a></li>
+          <li><a href="#"><img src="img/Starbuzz.jpg" alt="">STARBUZZ</a></li>
+        </ul>
+        <button class="btn">
+          <span><a href="category.html">商品ページを見る</a></span>
+          <a href="product.html"><img src="img/play_30px.png" class="play-logo" alt="Logo"></a>
+        </button>
+      </div>
+    </div>
+      </aside>
+  </main>
+  <footer>
+    <p><a href="index.html">About</a>
+      <a href="shoukai.html">紹介ページ　</a> 
+      <a href="product.html">商品</a> 
+      <a href="rules.html">使用上のルール</a></p>
+    <p class="coopyright">©Coopyright シーシャ・水たばこ紹介ウェブサイト Almalla</p>
+  </footer>
+  <script src="js/cart.js"></script>
+</body>
+</html>
